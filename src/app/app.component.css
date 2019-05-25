@@ -1,20 +1,25 @@
-img {
-    max-width:100%;
-    height:auto;
+#head{
+  background-color: purple;
+  text-align: center;
+  padding:30px;
+  color:white;
 }
 
-.header {
-    padding: 20px;
-    text-align: center;
-    background:purple;
-    color: white;
-    font-size: 20px;
-  }
+#card{
+  background-color: darkgray;
+  color:white;
+  border-radius: 25px 25px 25px 25px;
+  margin-left:50px;
+  margin-right:50px;
+  float:center;
+  
 
-  .container{
-    padding: 20px;
-    text-align: center;
-    background:lightgray;
-    color: white;
-    font-size: 20px;
-  }
+}
+
+span{
+  float:right;
+}
+
+img{
+  padding-left:20px;
+}
