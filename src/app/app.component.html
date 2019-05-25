@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="head">
   <h1>Product Details</h1>
   
 </div>
@@ -6,35 +6,18 @@
 <br>
 
 
-<div class="container">
-
-
-  <table>
-    <thead>
-      <tr>
-        <th>Image URL</th>
-        <th>Product Name</th>
-        <th>Product Description</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-  
-    <tbody>
-      <tr *ngFor="let product of products.content">
-  
-          <td><img src="{{product.image}}" alt=""></td>
-        <td>
-          {{product.name}}
-        </td>
-        <td>{{product.description}}</td>
-  
-        <td>{{product.price}}</td>
-  
-  
-        
-      </tr>
-    </tbody>
-  </table>
-
-
-</div>
+<div *ngFor="let product of products.content"  id="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{product.image}}" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-text">Product Name <span>{{product.name}}</span> </p>
+          <p class="card-text">Product Description <span>{{product.description}}</span> </p>
+          <p class="card-text">Price <span>{{product.price}} </span></p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
