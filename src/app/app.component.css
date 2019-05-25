@@ -1,0 +1,20 @@
+img {
+    max-width:100%;
+    height:auto;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background:purple;
+    color: white;
+    font-size: 20px;
+  }
+
+  .container{
+    padding: 20px;
+    text-align: center;
+    background:lightgray;
+    color: white;
+    font-size: 20px;
+  }
